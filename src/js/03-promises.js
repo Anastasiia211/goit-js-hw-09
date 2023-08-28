@@ -14,7 +14,7 @@ function onClick(event) {
   const amount = Number(inputAmount.value);
   let position;
 
-  for (let i = 1; i < amount; i += 1){
+  for (let i = 1; i <= amount; i += 1){
     position = i;
     createPromise(position, delay);
     delay += second;
